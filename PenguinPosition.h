@@ -20,7 +20,7 @@ public:
 
 private:
   void moveServoToPosition(Servo &servo, const uint8_t currentServoPosition, const uint8_t finalServoPosition) const;
-  
+
   const uint8_t *m_servoPositions;
   const uint32_t m_delayAfterMovement;
 };

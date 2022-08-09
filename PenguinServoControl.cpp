@@ -61,7 +61,7 @@ void PenguinServoControl::init() {
 
 void PenguinServoControl::move() {
   Direction currentDir = m_hasPriorityDirection ? m_priorityDir : m_dir;
-  
+
   switch (currentDir) {
     case Direction::NONE:
       standingPosition.moveToPosition(m_servos, m_currentServoPositions);

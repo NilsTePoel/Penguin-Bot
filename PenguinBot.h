@@ -12,7 +12,7 @@ const uint8_t minUltrasonicDistance = 5;
 
 const uint8_t leftInfraredInputPin = A0;
 const uint8_t rightInfraredInputPin = A1;
-const uint16_t minInfraredDistance = 400; // ADC-Wert, experimentell bestimmt
+const uint16_t minInfraredDistance = 400; // ADC-Wert
 
 const char buttonForward = 'f';
 const char buttonBackward = 'b';

@@ -16,7 +16,7 @@ void PenguinPosition::moveToPosition(Servo *servos, uint8_t *currentServoPositio
 
 void PenguinPosition::moveServoToPosition(Servo &servo, const uint8_t currentServoPosition, const uint8_t finalServoPosition) const {
   uint8_t newServoPosition = currentServoPosition;
-  
+
   // Hat der Servo noch nicht die Zielposition erreicht?
   while (newServoPosition != finalServoPosition) {
       const uint32_t delay = 10;

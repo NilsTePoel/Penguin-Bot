@@ -40,7 +40,7 @@ void PenguinObstacleDetection::avoidObstacle() {
   } else if (!m_leftSensor.isBlockedByObstacle() && m_rightSensor.isBlockedByObstacle()) {
     // Nur rechts wird ein Hindernis erkannt -> nach links drehen
     m_control.forceDirection(Direction::LEFT);
-  } else if ((m_leftSensor.isBlockedByObstacle() && m_rightSensor.isBlockedByObstacle()) || m_centerSensor.isBlockedByObstacle()){
+  } else if ((m_leftSensor.isBlockedByObstacle() && m_rightSensor.isBlockedByObstacle()) || m_centerSensor.isBlockedByObstacle()) {
     // Auf beiden Seiten wird ein Hindernis erkannt oder das Hindernis befindet sich unmittelbar vor dem
     // Roboter (d. h. "centerSensor" ist durch ein Hindernis blockiert) -> zurück bewegen
     m_control.forceDirection(Direction::BACKWARD);

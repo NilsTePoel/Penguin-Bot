@@ -20,7 +20,7 @@ void setup() {
 
 void loop() {
   obstacleDetection.reactToObstacles();
-  
+
   control.move();
 }
 

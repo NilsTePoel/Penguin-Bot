@@ -54,7 +54,7 @@ private:
   const uint8_t *m_servoPins;
   Servo m_servos[numServos];
   uint8_t m_currentServoPositions[numServos] = {90, 90, 90, 90};
-  
+
   Direction m_dir;
   bool m_hasPriorityDirection;
   Direction m_priorityDir;
